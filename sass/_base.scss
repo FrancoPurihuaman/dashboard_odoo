@@ -1,0 +1,32 @@
+/* ================= Estilo base =============== */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: $fontsizebody;
+    background-color: #fff;
+    color: $colortextbody;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+
+// Agregar a helpers
+
+.f_noselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
