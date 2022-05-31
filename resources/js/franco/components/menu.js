@@ -1,23 +1,28 @@
 /**
+ * Libreria para crear menu responsive
  * Author: Alvaro Felipe Chávez
  * Pagina: https://ed.team
  * 
- * Nota: El codigo original fue modificado para agregarle
- * más funcionalidad.
+ * Nota: El codigo original fue modificado para acloplar más funcionalidad.
  */
 
 
-
-// Objeto navegación
 var navegation = {};
 
-// menu
+/**
+ * Función para generar un menu para header
+ *
+ * @param String Id del contenedor de menu
+ * @param String Id del menu
+ * @param String Id del botón mostrar u ocultar menu
+ *            
+ */
 navegation.menu = function (containerId, menuId, toggleButtonId) {
     var container = document.getElementById(containerId);
     var menu = document.getElementById(menuId);
     var toggleButton = document.getElementById(toggleButtonId);
 
-    function showContainer() {
+    function toggleContainerVisibility() {
         container.classList.toggle('show_menu');
     }
 
@@ -54,7 +59,7 @@ navegation.menu = function (containerId, menuId, toggleButtonId) {
     // si el contenedor de menu y boton toggle existen mostrar u ocultar menu
     if (container) {
         if (toggleButton) {
-            toggleButton.addEventListener('click', showContainer);
+            toggleButton.addEventListener('click', toggleContainerVisibility);
         } else {
             console.error('Not found ' + toggleButtonId + ' Id');
         }
@@ -91,3 +96,5 @@ navegation.menu = function (containerId, menuId, toggleButtonId) {
         console.error('Not found ' + menuId + ' Id');
     }
 };
+
+export default navegation;

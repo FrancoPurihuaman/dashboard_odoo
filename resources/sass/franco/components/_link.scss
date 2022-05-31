@@ -1,0 +1,93 @@
+// Link : ---------------------------------------------------------------------------------------------------------------------------------
+// .f_link : Estilo para link
+// .f_link--button : Estilo de link igual a un boton
+// .f_link--button.small : Estilo de link igual a un boton pequeño
+// .f_link--button.f_link--button-primary : Estilo de link igual al boton primary
+// .f_link--button.f_link--button-danger : Estilo de link igual al boton danger
+// .f_link--button.f_link--button-outline : Estilo de link igual al boton ouline
+
+a.f_link {
+	text-decoration : none;
+
+	&:link, &:visited, &:hover, &:active {
+		color: $colortextlink;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+}
+
+
+a.f_link--button,
+a.f_link--button:link,
+a.f_link--button:visited,
+a.f_link--button:hover,
+a.f_link--button:active {
+	text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+	font-size: .9rem;
+	line-height: .9rem;
+    padding: 8px 15px;
+    display: inline-block;
+    text-align: center;
+    color: #FFF;
+	background-color: $colortema;
+    border: 1px solid transparent;
+    border-radius: 3px;
+	vertical-align: middle;
+    cursor: pointer;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+	&.small{
+        font-size: .8rem;
+        line-height: .8rem;
+        min-width: 60px;
+        border-radius: 0px !important;
+        padding: 3px 4px !important;
+    }
+
+	&:hover{
+		-webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+		box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+	}
+}
+
+a.f_link__button.f_link--button-primary,
+a.f_link__button.f_link--button-primary:link,
+a.f_link__button.f_link--button-primary:visited,
+a.f_link__button.f_link--button-primary:hover,
+a.f_link__button.f_link--button-primary:active {
+    background: $colorbackbuttonprimary;
+}
+
+a.f_link__button.f_link--button-danger,
+a.f_link__button.f_link--button-danger:link,
+a.f_link__button.f_link--button-danger:visited,
+a.f_link__button.f_link--button-danger:hover,
+a.f_link__button.f_link--button-danger:active {
+    background-color: $colorbackbuttondanger;
+    color: $colortextbuttondanger;
+}
+
+a.f_link__button.f_link__button-outline,
+a.f_link__button.f_link__button-outline:link,
+a.f_link__button.f_link__button-outline:visited,
+a.f_link__button.f_link__button-outline:hover,
+a.f_link__button.f_link__button-outline:active {
+	font-weight: 400;
+	border: 1px solid #c5c5c5;
+	background: #f6f6f6;
+	color: #454545;
+
+	&:hover{
+		border: 1px solid #ccc;
+		background: #ededed;
+		color: #2b2b2b;
+	}
+}

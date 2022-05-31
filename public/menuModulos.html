@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/dashboard------------.css">
+</head>
+<body class="f_web_page_client">
+
+    <!-- Cabezera de pagina de pagina -->
+    <header class="f_header-page">
+
+        <!-- Cabezera -->
+        <div class="f_header">
+            <div class="menu-opciones-modulo"></div>
+    
+            <!-- Información addional -->
+            <div class="f_header__infoAux">
+                <div class="f_header__message">
+                    <div class="f_header__messaje_toggle" id="btnToggleMessageHeader">
+                        <i class="fas fa-comments"><span class="amount">2</span></i>
+                    </div>
+                    <div class="f_message__card" id="cardMessageHeader">
+                        <div class="f_message__links">
+                            <a class="f_message__link" href="#">
+                                <div class="f_message__image f_noselectable">
+                                    <img src="/panel/public/img/user1.jpg" alt="">
+                                </div>
+                                <div class="f_message__description">
+                                    <div class="f_message__info">
+                                        <div class="f_message__sender">
+                                            Jhon Doe
+                                        </div>
+                                        <div class="f_message__time">hace 2 horas</div>
+                                    </div>
+                                    <div class="f_message__messaje">
+                                        Hola enviaré un nuevo stock de jarabes
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="f_message__link" href="#">
+                                <div class="f_message__image f_noselectable">
+                                    <img src="/panel/public/img/user2.jpg" alt="">
+                                </div>
+                                <div class="f_message__description">
+                                    <div class="f_message__info">
+                                        <div class="f_message__sender">
+                                            System
+                                        </div>
+                                        <div class="f_message__time">hace 2 horas</div>
+                                    </div>
+                                    <div class="f_message__messaje">
+                                        Necesito cambio algien?
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="f_message__card_footer">
+                            <a href="#">ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f_header__notification">
+                    <div class="f_header__notification_toggle" id="btnToggleNotificationHeader">
+                        <i class="fas fa-bell"><span class="amount">1</span></i>
+                    </div>
+                    <div class="f_notification__card" id="cardNotificationHeader">
+                        <div class="f_notification__links">
+                            <a class="f_notification__link" href="#">
+                                <div class="f_notification__image f_noselectable"><span><i class="fas fa-cog"></i></span></div>
+                                <div class="f_notification__description">
+                                    <div class="f_notification__info">
+                                        <div class="f_notification__sender">
+                                            Jhon Doe
+                                        </div>
+                                        <div class="f_notification__time">hace 2 horas</div>
+                                    </div>
+                                    <div class="f_notification__messaje">
+                                        Genero una copia de la base de datos
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="f_notification__link" href="#">
+                                <div class="f_notification__image f_noselectable"><span><i class="fas fa-cog"></i></span></div>
+                                <div class="f_notification__description">
+                                    <div class="f_notification__info">
+                                        <div class="f_notification__sender">
+                                            System
+                                        </div>
+                                        <div class="f_notification__time">hace 2 horas</div>
+                                    </div>
+                                    <div class="f_notification__messaje">
+                                        <span>Actulaizar Stock de Antipireticos</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="f_notification__link" href="#">
+                                <div class="f_notification__image f_noselectable"><span><i class="fas fa-cog"></i></span></div>
+                                <div class="f_notification__description">
+                                    <div class="f_notification__info">
+                                        <div class="f_notification__sender">
+                                            Jhon Doe
+                                        </div>
+                                        <div class="f_notification__time">hace 2 horas</div>
+                                    </div>
+                                    <div class="f_notification__messaje">
+                                        Actualizar stock de paneles
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="f_notification__card_footer">
+                            <a href="#">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_header__btnToggle">
+                    <button class="f_menu__btnToggle" id="btnToggleMenuHeader"><i class="fas fa-th"></i></button>
+                </div>
+                <div class="f_user--forheader">
+                    <div class="f_user__image f_noselectable" id="btnToggleUserHeader"><span>E</span></div>
+                    <div class="f_user__card" id="cardUserHeader">
+                        <div class="f_user__info">
+                            <div class="f_user__image f_noselectable"><span>E</span></div>
+                            <div class="f_user__description">
+                                <span class="f_user__name">Nombre de usuario</span>
+                                <span class="f_user__type">Admin</span>
+                            </div>
+                        </div>
+                        <div class="f_user__actions">
+                            <ul>
+                                <li><a href="#">Mi perfil</a></li>
+                                <li><a href="#">Soporte</a></li>
+                                <li><a href="#">Cerrar sesión</a></li>
+                            </ul>
+                        </div>
+                        <div class="f_user__card_footer">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Terminos y condiciones reservados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Información addional -->
+
+        </div>
+    </header>
+    
+    <!-- Menu de modulos -->
+    <div class="f_menu_modules f_menu_modules--static" id="menuModules">
+        <div class="f_menu_modules__table">
+            <ul id="menuModulesList">
+                <li class="f_menu_modules__item">
+                    <a href="#">
+                        <span class="f_menu_modules__logoItem" style="color: #d48557;">
+                            <i class="fas fa-users"></i>
+                        </span>
+                        <div class="f_menu_modules__description">Contactos</div>
+                    </a>
+                </li>
+                <li class="f_menu_modules__item">
+                    <a href="#">
+                        <span class="f_menu_modules__logoItem" style="color: #a55858;">
+                            <i class="fas fa-box-open"></i>
+                        </span>
+                        <div class="f_menu_modules__description">Inventario</div>
+                    </a>
+                </li>
+                <li class="f_menu_modules__item">
+                    <a href="#">
+                        <span class="f_menu_modules__logoItem" style="color: #c5bb78;">
+                            <i class="fas fa-store"></i>
+                        </span>
+                        <div class="f_menu_modules__description">Punto de Venta</div>
+                    </a>
+                </li>
+                <li class="f_menu_modules__item">
+                    <a href="#">
+                        <span class="f_menu_modules__logoItem" style="color: #259093;">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </span>
+                        <div class="f_menu_modules__description">Contabilidad</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /Menu de modulos -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/js/fontawesome.min.js" integrity="sha512-bz1boXQShq1yhynCBoKGrOTa7Co1u0v96gBHpfK+77D1jJegjuDK3ugQ2/9thJ2pcsD9pBOoTKgumDuGf7kO+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

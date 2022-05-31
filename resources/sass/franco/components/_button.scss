@@ -1,0 +1,99 @@
+// Boton :  ----------------------------------------------------------------------------------------------------------------------------
+// .f_button : Estilo de boton igual al tema (este estilo es base para los demas)
+// .f_button.small: Estilo de boton pequeño
+// .f_button.f_button--primary : Estilo de boton primario
+// .f_button.f_button--danger : Estilo de boton para accion eliminar
+// .f_button.f_button--refused : Estilo de boton para accion de formulario bloqueado
+// .f_button.f_button--outline : Estilo de boton solo con linea de contorno
+// .f_button.f_button--square : Estilo de boton cuadrado (util para tablas, cargar archivos, etc)
+// .f_button-icon : Estilo de boton sin borde (puede ser util para los iconos)
+
+button.f_button {
+    font-family: $fontbutton;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .9rem;
+    line-height: .9rem;
+    min-width: 90px;
+    padding: 8px 15px;
+    background-color: $colortema;
+    color: #FFF;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &.small{
+        font-size: .8rem;
+        line-height: .8rem;
+        min-width: 60px;
+        border-radius: 0px !important;
+        padding: 3px 4px !important;
+    }
+
+    &:hover {
+        -webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+        box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+    }
+}
+
+button.f_button--primary {
+	color: #FFF !important;
+    background: $colorbackbuttonprimary !important;
+}
+
+button.f_button.f_button--danger {
+    background-color: $colorbackbuttondanger !important;
+    color: $colortextbuttondanger !important;
+}
+
+button.f_button.f_button--refused {
+    background-color: #fff !important;
+    color: #999 !important;
+	border: 1px solid #ccc !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	cursor: not-allowed !important;
+}
+
+
+button.f_button.f_button--outline {
+	font-weight: 400;
+	border: 1px solid #c5c5c5;
+	background: #f6f6f6;
+	color: #454545;
+	
+	&:hover {
+		border: 1px solid #ccc;
+		background: #ededed;
+		color: #2b2b2b;
+	}
+}
+
+button.f_button.f_button--square {
+    background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	color: #444;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border: 1px solid #aaa;
+	border-radius: 1px;
+}
+
+button.f_button-icon {
+	border: unset;
+	background-color: unset;
+	padding: 7px 8px 7px 8px;
+	
+	&:hover{
+        color: $colortema;
+  }
+}
+

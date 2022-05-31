@@ -1,0 +1,123 @@
+// Tabla ----------------------------------------------------------------------------------------------------------------------
+// .f_table-responsive: Estilo para contenedor de tabla (esto convertira a la tabla en responsive)
+// .f_table	: Estilo general de tabla
+// .f_table.f_table--striped: Estilo de filas a colores
+// .f_table.f_table--itemlist: Estilo de tabla para valores de atributos (field : value)
+// .f_table.f_table--hover: Se agregara evento hover a todas las filas
+// .f_table tr.f_oddeven: Solo a estas filas se le agregara el evento hover
+// .f_table tr.list_title: Esta fila sera contenedor de cabezeras de columnas de la tabla
+// .f_table tr.list_title_filter: Esta fila sera contenedor de etiquetas de filtro (input, select, ect)
+
+
+
+// Estil de contenedor de tabla
+.f_table-responsive{
+    overflow-x: auto;
+}
+
+// Estilo de tabla
+
+table.f_table {
+    width: 100%;
+    font-family: arial,tahoma,verdana,helvetica;
+	border-collapse: separate !important;
+	border-spacing: 0px;
+	border-top: 1px solid rgb(215,215,215);
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+// Estilo de cabezera de tabla
+
+table.f_table > thead {
+	background-color: $colorbackthead;
+}
+
+// Estilo de fila de tabla
+
+table.f_table tr{
+    min-height: 22px;
+}
+
+table.f_table tr.f_oddeven {
+	color: $colortexttroddeven !important;
+}
+
+table.f_table tr.f_oddeven:hover {
+    background-color: $colorbacktrhover !important;
+}
+
+table.f_table.f_table--hover tbody tr:hover {
+    background-color: $colorbacktrhover !important;
+}
+
+table.f_table tr.list_title_filter {
+    background-color: $colorbackthead !important;
+}
+
+table.f_table tr.list_title {
+    background-color: $colorbackthead !important;
+    height: 26px !important;
+}
+
+table.f_table.f_table--striped > tbody > tr:nth-child(2n+1):not(.list_title){
+    background: $colorbacktreven;
+}
+
+table.f_table.f_table--striped > tbody > tr:nth-child(2n):not(.list_title){
+    background-color: $colorbacktrodd;
+}
+
+// Estilo de celda de tabla
+
+table.f_table td,
+table.f_table th,
+table.f_table tr.list_title td,
+table.f_table tr.list_title th {
+	font-size: 0.90rem !important;
+	height: 22px;
+	line-height: 22px;
+	padding: 7px 8px;
+    border: none;
+    vertical-align: inherit;
+}
+
+table.f_table tr.list_title th,
+table.f_table tr.list_title td {
+    color: rgba(10, 20, 100, 0.9);
+    opacity: 0.8;
+    height: 24px;
+    font-weight: normal !important;
+    text-align: left;
+    border-bottom: 1px solid rgb(215,215,215);
+    vertical-align: middle;
+}
+
+table.f_table tr td:first-of-type,
+table.f_table tr th:first-of-type{
+    padding-left: 8px;
+}
+
+table.f_table tr td:last-of-type,
+table.f_table tr th:last-of-type{
+    padding-right: 8px;
+}
+
+table.f_table > tbody > tr:not(:last-child):not(.list_title) td {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table.f_table tr:last-of-type td {
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+table.f_table.f_table--itemlist tr td,
+table.f_table.f_table--itemlist tr th {
+	padding: 5px 2px 5px 2px !important;
+}
+
+table.f_table.f_table--itemlist tr td:first-of-type,
+table.f_table.f_table--itemlist tr th:first-of-type {
+	color: #666;
+	width: 250px;
+}

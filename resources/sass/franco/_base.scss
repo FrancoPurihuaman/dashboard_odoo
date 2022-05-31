@@ -1,11 +1,16 @@
 /* ================= Estilo base =============== */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body{
     margin: 0px;
     padding: 0px;
-    font-size: $fontsizebody;
+    font-size: $fontsizemain;
     background-color: #fff;
-    color: $colortextbody;
+    color: $colortextmain;
 }
 
 ul{
@@ -19,14 +24,4 @@ ul li{
 
 ul a{
     text-decoration: none;
-}
-
-
-// Agregar a helpers
-
-.f_noselectable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
 }

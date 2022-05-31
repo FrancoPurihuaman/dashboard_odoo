@@ -1,0 +1,84 @@
+// Entrada de texto: ---------------------------------------------------------------------------------------------------------
+// .f_input-box--flat : Estilo para los elementos de entrada de texto (inputs, select, textarea)
+//                  Este estilo tambien puede ser agregado directamente a un formulrio o tabla
+
+
+
+
+// Input y Select
+
+input.f_input-box--flat,
+select.f_input-box--flat,
+form.f_input-box--flat input,
+form.f_input-box--flat select,
+table.f_input-box--flat input,
+table.f_input-box--flat select
+{
+	font-size: unset;
+    line-height: 1.2rem;
+    padding: 4px;
+    padding-left: 5px;
+    background-color: $colorbackinput;
+    color: $colortextmain;
+    border: none;
+    border-bottom: 1px solid $colorborderinput;
+    border-radius: 2px;
+    outline: none;
+    margin: 0px;
+
+    &:focus{
+        border-bottom: 1px solid #666;
+    }
+
+    &:disabled{
+        background: darken(#e9ecef, 5%) !important;
+	    cursor: not-allowed;
+    }
+}
+
+
+// Input de libreria select 2
+// 
+// .f_input-box--flat.select2-selection.select2-selection--single
+// {
+//     font-family: $fontmain;
+//     outline: none;
+//     margin: 0px;
+//     border-bottom: 1px solid $inputbordercolor;
+// }
+
+
+
+// Text area
+
+textarea.f_input-box--flat,
+form.f_input-box--flat textarea,
+table.f_input-box--flat textarea
+{
+    padding: 4px;
+	border: 1px solid $colorborderinput;
+    background-color: $colorbackinput;
+    color: $colortextmain;
+	border-radius: 2px;
+	outline: none;
+	margin: 1px 0px;
+
+    &:focus{
+        border: 1px solid #aaa;
+    }
+}
+
+
+
+// Etiqueta de cambo : --------------------------------------------------------------------------------------------------------
+// .f_field : Estilo para etiqueta (label)
+// .f_field--required : Estilo de etiqueta requerido
+
+.f_field {
+    font-weight: normal;
+}
+
+.f_field--required {
+    font-weight: bold;
+    color: $colortextfieldrequired;
+}

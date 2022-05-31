@@ -1,0 +1,80 @@
+// Efecto de carga (loading) ---------------------------------------------------------------------------------------------------------------
+// .f_preloaderonda : Estilo animacion de preloader "cargando"
+// .f_preloaderonda.f_preloaderondacenter : Estilo para centrar la animacion
+
+.f_preloaderonda {
+    position:relative;
+	display: inline-block;
+	height: 1px;
+
+	& span{
+	    display: inline-block;
+	    bottom: 0px;
+	    width: 9px;
+	    height: 5px;
+	    background: #9b59b6;
+	    position: absolute;
+	    animation: f_preloaderonda 1.5s  infinite ease-in-out;
+	}
+	
+	& span:nth-child(2) {
+		left:11px;
+		animation-delay: .2s;
+	 
+	}
+	& span:nth-child(3) {
+		left:22px;
+		animation-delay: .4s;
+	}
+	& span:nth-child(4) {
+		left:33px;
+		animation-delay: .6s;
+	}
+	& span:nth-child(5) {
+		left:44px;
+		animation-delay: .8s;
+	}
+}
+
+.f_preloaderonda.f_preloaderondacenter {
+	text-align: center !important;
+	
+	& span:nth-child(1) {
+		left:-33px;
+		animation-delay: .0s;
+	}
+	& span:nth-child(2){
+		left:-22px;
+		animation-delay: .2s;
+	}
+	& span:nth-child(3) {
+		left:-11px;
+		animation-delay: .4s;
+	}
+	& span:nth-child(4) {
+		left:0px;
+		animation-delay: .6s;
+	}
+	& span:nth-child(5) {
+		left:11px;
+		animation-delay: .8s;
+	}
+}
+ 
+
+@keyframes f_preloaderonda {
+    0% {height:5px;transform:translateY(0px);background:#9b59b6;}
+    25% {height:30px;transform:translateY(15px);background:#3498db;}
+    50% {height:5px;transform:translateY(0px);background:#9b59b6;}
+    100% {height:5px;transform:translateY(0px);background:#9b59b6;}
+}
+
+.f_classforrotatespinner {
+	animation: f_rotatespinner 1s  infinite linear;
+}
+
+@keyframes f_rotatespinner {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}

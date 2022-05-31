@@ -4,7 +4,8 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
-    dashboard: path.resolve(__dirname, 'webpackStyle.js')
+    dashboard: path.resolve(__dirname, './resources/js/dashboard.js'),
+    //access: path.resolve(__dirname, './resources/js/access.js')
   },
   devtool: 'none',
   mode: 'production',

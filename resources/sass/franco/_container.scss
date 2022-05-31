@@ -1,0 +1,33 @@
+// ===================== Estilo de contendor =============================================
+
+// Contenedor principal ---------------------------------------------------------------------------------------------------
+// .f_web_page_client: Estilo de pagina
+// .f_header-page: Estilo de cabezera de pagina
+// .f_content-main: Estilo de contendor principal
+
+html .f_web_page_client{
+    display: flex;
+    flex-flow: column nowrap;
+    direction: ltr;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.f_header-page{
+    background-color: $colortema;
+    padding: 0 $gutter;
+    width: 100%;
+}
+
+.f_content-main{
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: $maxwidthbodymain;
+    padding: 0 $gutter;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    overflow: auto;
+}

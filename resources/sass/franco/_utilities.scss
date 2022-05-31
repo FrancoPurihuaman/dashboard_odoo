@@ -1,0 +1,272 @@
+// No seleccionable -----------------------------------------------------------------------------------------------
+// .f_noselectable: Estilo para no seleccionar contido
+
+.f_noselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+// No envolvente (Contendio en una sola linea) --------------------------------------------------------------------------
+// .f_nowrap: Mostrar contendio en una solo linea (Este debe ser acompañado con ancho de contenido. width, max-width)
+
+.f_nowrap {
+    max-width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// Border --------------------------------------------------------------------------------------------------------------
+// .f-border: Borde en los cuatro lados
+// .f_border-top: Solo borde superior
+// .f_border-bottom: Solo borde inferior
+// .f_border-left: Solo borde izquierdo
+// .f_border-right: Solo borde derecho
+// .f_noborder: Sin bordes
+// .f_noborder-top: Sin borde superior
+// .f_noborder-bottom: Sin borde inferior
+// .f_noborder-left: Sin borde izquierdo
+// .f_noborder-right: Sin borde derecho
+
+.f-border{border: 1px solid $colorline !important;}
+.f_border-top{border-top: 1px solid $colorline !important;}
+.f_border-bottom{border-bottom: 1px solid $colorline !important;}
+.f_border-left{border-left: 1px solid $colorline !important;}
+.f_border-right{border-right: 1px solid $colorline !important;}
+.f_noborder{border: none !important;}
+.f_noborder-top{border-top: none !important;}
+.f_noborder-bottom{border-bottom: none !important;}
+.f_noborder-left{border-left: none !important;}
+.f_noborder-right{border-right: none !important;}
+
+
+
+// Ancho de caja (multiplos de 5 hasta 500) -----------------------------------------------------------------------------------------------
+//
+// .f_widthauto			: Ancho automatico
+// .f_width#{$i}		: Ancho especificado en pixeles
+// .f_width#{$i}p		: Ancho especificado en porcentaje
+// .f_maxwidth#{$i}  	: Maximo ancho especificado en pixeles
+// .f_maxwidth#{$i}imp	: Maximo ancho especificado en pixeles y en modo "Importante"
+// .f_minwidth#{$i}  	: Minimo ancho especificado en pixeles
+// .f_minwidth#{$i}imp	: Minimo ancho especificado en pixeles y en modo "Importante"
+// .f_widthsm#{$i}p		: Ancho especificado en porcentaje para pantallas small
+// .f_minwidthsm#{$i}p	: Minimo ancho especificado en porcentaje para pantallas small
+
+
+//@function isMultiple5($i){   
+//    @return ($i % 5 == 0);   
+//}
+//
+//@for $i from 20 through 500{  
+//    @if(isMultiple5($i)){    
+//        .maxwidth#{$i}imp{        
+//            max-width: 0px + $i !important; 
+//        }
+//    }
+//}
+
+.f_widthauto { width: auto; }
+.f_width20  { width: 20px; }
+.f_width25  { width: 25px; }
+.f_width50  { width: 50px; }
+.f_width75  { width: 75px; }
+.f_width100 { width: 100px; }
+.f_width125 { width: 125px; }
+.f_width150 { width: 150px; }
+.f_width200 { width: 200px; }
+.f_width300 { width: 300px; }
+.f_width400 { width: 400px; }
+.f_width500 { width: 500px; }
+
+.f_width20p { width:20%; }
+.f_width25p { width:25%; }
+.f_width40p { width:40%; }
+.f_width50p { width:50%; }
+.f_width60p { width:60%; }
+.f_width75p { width:75%; }
+.f_width80p { width:80%; }
+.f_width100p { width:100%; }
+
+.f_maxwidth25  { max-width: 25px; }
+.f_maxwidth40  { max-width: 40px; }
+.f_maxwidth50  { max-width: 50px; }
+.f_maxwidth75  { max-width: 75px; }
+.f_maxwidth80  { max-width: 80px; }
+.f_maxwidth100 { max-width: 100px; }
+.f_maxwidth125 { max-width: 125px; }
+.f_maxwidth150 { max-width: 150px; }
+.f_maxwidth200 { max-width: 200px; }
+.f_maxwidth250 { max-width: 250px; }
+.f_maxwidth300 { max-width: 300px; }
+.f_maxwidth400 { max-width: 400px; }
+.f_maxwidth500 { max-width: 500px; }
+.f_maxwidth750 { max-width: 750px; }
+.f_maxwidth1000 { max-width: 1000px; }
+
+.f_maxwidth25imp  { max-width: 25px !important; }
+.f_maxwidth40imp  { max-width: 40px !important; }
+.f_maxwidth50imp  { max-width: 50px !important; }
+.f_maxwidth75imp  { max-width: 75px !important; }
+.f_maxwidth80imp  { max-width: 80px !important; }
+.f_maxwidth100imp { max-width: 100px !important; }
+.f_maxwidth125imp { max-width: 125px !important; }
+.f_maxwidth150imp { max-width: 150px !important; }
+.f_maxwidth200imp { max-width: 200px !important; }
+.f_maxwidth250imp { max-width: 250px !important; }
+.f_maxwidth300imp { max-width: 300px !important; }
+.f_maxwidth400imp { max-width: 400px !important; }
+.f_maxwidth500imp { max-width: 500px !important; }
+.f_maxwidth750imp { max-width: 750px !important; }
+.f_maxwidth1000imp { max-width: 1000px !important; }
+
+.f_minwidth25  { min-width: 25px; }
+.f_minwidth40  { min-width: 40px; }
+.f_minwidth50  { min-width: 50px; }
+.f_minwidth75  { min-width: 75px; }
+.f_minwidth80  { min-width: 80px; }
+.f_minwidth100 { min-width: 100px; }
+.f_minwidth125 { min-width: 125px; }
+.f_minwidth150 { min-width: 150px; }
+.f_minwidth200 { min-width: 200px; }
+.f_minwidth250 { min-width: 250px; }
+.f_minwidth300 { min-width: 300px; }
+.f_minwidth400 { min-width: 400px; }
+.f_minwidth500 { min-width: 500px; }
+.f_minwidth750 { min-width: 750px; }
+.f_minwidth1000 { min-width: 1000px; }
+
+.f_minwidth25imp  { min-width: 25px !important; }
+.f_minwidth40imp  { min-width: 40px !important; }
+.f_minwidth50imp  { min-width: 50px !important; }
+.f_minwidth75imp  { min-width: 75px !important; }
+.f_minwidth80imp  { min-width: 80px !important; }
+.f_minwidth100imp { min-width: 100px !important; }
+.f_minwidth125imp { min-width: 125px !important; }
+.f_minwidth150imp { min-width: 150px !important; }
+.f_minwidth200imp { min-width: 200px !important; }
+.f_minwidth250imp { min-width: 250px !important; }
+.f_minwidth300imp { min-width: 300px !important; }
+.f_minwidth400imp { min-width: 400px !important; }
+.f_minwidth500imp { min-width: 500px !important; }
+.f_minwidth750imp { min-width: 750px !important; }
+.f_minwidth1000imp { min-width: 1000px !important; }
+
+
+@media (max-width: map-get($breakpoints , sm ))
+{
+	.f_widthsm25p { width:25%; }
+	.f_widthsm50p { width:50%; }
+	.f_widthsm75p { width:75%; }
+	.f_widthsm100p { width:100%; }
+	
+	.f_minwidthsm25p { min-width:25%; }
+	.f_minwidthsm50p { min-width:50%; }
+	.f_minwidthsm75p { min-width:75%; }
+	.f_minwidthsm100p { min-width:100%; }
+}
+
+
+// Ocultar contenido -------------------------------------------------------------------------------------------------------------------------
+// .f_overflow#{$i} : Mostrar contendio hasta el ancho maximo especificado
+
+
+
+.f_hideoverflow25 { 
+	max-width: 25px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+.f_overflowmax40  { 
+	max-width: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;  
+}
+.f_overflowmax50 { 
+	max-width: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+.f_overflowmax75 { 
+	max-width: 75px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+.f_overflowmax80 { 
+	max-width: 80px; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+.f_overflowmax100 { 
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+.f_overflowmax125 { 
+	max-width: 125px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+.f_overflowmax150 { 
+	max-width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+.f_overflowmax200 { 
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.f_overflowmax250 { 
+	max-width: 250px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.f_overflowmax300 { 
+	max-width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.f_overflowmax400 { 
+	max-width: 400px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.f_overflowmax500 { 
+	max-width: 500px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.f_overflowmax750 { 
+	max-width: 750px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.f_overflowmax1000 { 
+	max-width: 1000px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+}
+
+//[class^='overflowmax']{
+//	overflow: hidden;
+//	text-overflow: ellipsis;
+//	white-space: nowrap;
+//}

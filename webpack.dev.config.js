@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    dashboard: path.resolve(__dirname, 'webpackStyle.js')
+    dashboard: path.resolve(__dirname, './resources/js/dashboard.js')
+    //access: path.resolve(__dirname, './resources/js/access.js')
   },
   mode: 'development',
   output: {

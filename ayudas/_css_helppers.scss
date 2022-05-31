@@ -1,0 +1,63 @@
+// Imagen -----------------------------------------------------------------------------------------------------------------------------------------
+// .f_imageavatartable : Imagen avatar para las tablas
+// .f_imageref : Imagen de referencia
+
+.f_imageavatartable {
+	display: inline-block;
+	width: 1.4em;
+	height: 1.4em;
+	border: 0px;
+	border-radius: 50%;
+	background-size: contain;
+	background-color: #fff;
+	vertical-align: middle;
+}
+
+
+.f_imageref {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+    padding: 4px;
+	font-size: 2em;
+	border: 1px solid #DDD;
+    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+
+// Tooltip con base bootstrap -----------------------------------------------------------------------------------------------------------------------------
+// f_tooltip: tooltip para mostrar información adicional
+
+.f_tooltip {
+	
+	.tooltip-inner {
+		max-width: 700px;
+		text-align: left;
+		margin-left: 1em;
+		margin-right: 1em;
+		background-color: #fff !important;
+		color: $colortext;
+		-webkit-box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+		box-shadow: 0px 0px 6px 1px rgba(50, 50, 50, 0.4), 0px 0px 0px rgba(60,60,60,0.1);
+	 }
+
+	.arrow {
+		display: none;
+	}
+}
+
+
+// Opacidad -----------------------------------------------------------------------------------------------------------------------------
+// f_opacitymedium : Opacidad media
+
+.f_opacitymedium {
+	opacity: 0.5;
+}
